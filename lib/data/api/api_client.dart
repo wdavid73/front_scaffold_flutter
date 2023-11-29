@@ -3,7 +3,7 @@ import 'package:front_scaffold_flutter/data/api/api_endpoint.dart';
 import 'package:front_scaffold_flutter/data/api/interceptors/api_errors_interceptor.dart';
 import 'package:front_scaffold_flutter/data/api/interceptors/api_token_interceptor.dart';
 
-String BASE_URL = ApiEndpoint.baseUrl;
+String baseUrl = ApiEndpoint.baseUrl;
 
 class ApiClient {
   final _client = createDio();
@@ -22,7 +22,7 @@ class ApiClient {
   }
 
   static BaseOptions createBaseOptions() => BaseOptions(
-        baseUrl: BASE_URL,
+        baseUrl: baseUrl,
         receiveTimeout: const Duration(seconds: 15),
         connectTimeout: const Duration(seconds: 15),
         responseType: ResponseType.json,
