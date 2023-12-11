@@ -2,7 +2,7 @@ name: front_scaffold_flutter
 description: FrontScaffoldFlutter es una plantilla robusta y flexible diseñada para acelerar el desarrollo de proyectos en Flutter. Esta plantilla proporciona una estructura organizada, componentes reutilizables y las mejores prácticas de codificación para garantizar un inicio rápido y un mantenimiento sin problemas. Es adecuada para una amplia variedad de aplicaciones, desde aplicaciones móviles simples hasta proyectos más complejos.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 0.0.1+1
+version: 1.0.0+1
 
 environment:
   sdk: '>=3.1.3 <4.0.0'
@@ -41,6 +41,9 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - .env
 
   # To add assets to your application, add an assets section, like this:
   # assets:
