@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:front_scaffold_flutter/utils/extensions.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -26,8 +27,8 @@ class _MyHomePageState extends State<HomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
+            Text(
+              context.translate('test'),
             ),
             Text(
               '$_counter',
