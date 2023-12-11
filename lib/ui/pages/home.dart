@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:front_scaffold_flutter/utils/config.dart';
 import 'package:front_scaffold_flutter/utils/extensions.dart';
 
 class HomePage extends StatefulWidget {
@@ -12,6 +14,11 @@ class _MyHomePageState extends State<HomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    if (kDebugMode) {
+      print('API Key: ${AppConfig.apiKey}');
+      print('Base URL: ${AppConfig.baseUrl}');
+      print('Debug Mode: ${AppConfig.debugMode}');
+    }
     setState(() {
       _counter++;
     });
