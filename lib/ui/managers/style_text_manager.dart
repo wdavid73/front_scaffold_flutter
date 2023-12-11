@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:front_scaffold_flutter/ui/font_manager.dart';
+import 'package:front_scaffold_flutter/ui/managers/font_manager.dart';
 
 TextStyle _getTextStyle({
   FontWeight? fontWeight,
