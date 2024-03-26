@@ -14,9 +14,15 @@ class ColorManager {
   static Color secondaryColor = HexColor.fromHex("#2195f3");
   static Color secondaryAccentColor = HexColor.fromHex("#038dfd");
   static Color secondaryBackgroundColor = HexColor.fromHex("#999999");
+  static Color accentColor = HexColor.fromHex('#219');
+  static Color accentColorLight = HexColor.fromHex('#219');
   static Color splashColor = HexColor.fromHex("#9a08b4");
   /* ------------ UTILS COLORS  -------------- */
   static Color disabledColor = HexColor.fromHex("#bcbcbc");
+  static Color placeholderColor = HexColor.fromHex('#dadce0');
+/* ------------ VARIATION COLORS  -------------- */
+  static Color shadowColorDark = HexColor.fromHex('#171717');
+  static Color containerColorDark = HexColor.fromHex('#414141');
 
   static Color error = HexColor.fromHex("#EF5350");
   static Color divider = HexColor.fromHex("#BDBDBD");

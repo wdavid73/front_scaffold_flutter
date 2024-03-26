@@ -10,9 +10,12 @@ class ExampleRepositoryImpl extends ExampleRepository {
   ExampleRepositoryImpl(this._client);
 
   @override
-  Future<ResponseState> get() async {
+  Future<ResponseState> get({Map<String, dynamic>? queryParams}) async {
     try {
-      final response = await _client.get('$ApiEndpoint');
+      final response = await _client.get(
+        '$ApiEndpoint',
+        queryParams: queryParams,
+      );
       return ResponseSuccess(null, response.statusCode!);
     } catch (e) {
       return ResponseFailed(
